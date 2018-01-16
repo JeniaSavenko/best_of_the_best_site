@@ -1,5 +1,25 @@
-.bg-section{
-  &__outer{
-
+.bg-section {
+  &__outer {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: relative;
   }
+  &__inner {
+    background: $yellow;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+#bg-img {
+  width: 100vw;
+  height: 100vh;
+}
+#logo{
+  width: 100px;
+  height: 100px;
 }

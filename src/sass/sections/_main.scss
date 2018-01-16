@@ -1,0 +1,27 @@
+.intro-section {
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  &__item {
+    font-family: $basic-font;
+    font-size: 5em;
+    color: white;
+  }
+  &__menu-list &__menu-list-item {
+    font-family: $basic-font;
+    font-weight: 200;
+    font-size: 2em;
+    display: inline;
+    list-style-type: none;
+  }
+  &__menu-list-item:not(:last-child) {
+    margin-right: 180px;
+  }
+}
+a{
+  text-decoration: none;
+  color: white;
+}
