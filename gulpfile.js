@@ -35,7 +35,7 @@ gulp.task("js", function () {
 gulp.task("img", function () {
   return gulp.src("src/img/**/*")
       .pipe(gulp.dest("dist/img/**/*"))
-      .pipe(browserSync.reload({stream:true}))
+      .pipe(browserSync.reload({stream: true}))
 });
 gulp.task("watch", ["sass", "js"], function () {
   gulp.watch("src/sass/**/*.scss", ["sass"])

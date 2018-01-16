@@ -1,0 +1,17 @@
+.catalog-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  &__header {
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  &__header--menu-list{
+    display: inline;
+    list-style-type: none;
+  }
+}
