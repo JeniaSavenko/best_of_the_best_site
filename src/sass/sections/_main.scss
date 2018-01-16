@@ -8,7 +8,7 @@
   &__item {
     font-family: $basic-font;
     font-size: 5em;
-    color: white;
+    color: $white;
     margin-bottom: 55px;
   }
   &__menu-list &__menu-list-item {
@@ -19,7 +19,7 @@
     list-style-type: none;
   }
   &__menu-list{
-    border-top-color: white;
+    border-top-color: $text;
     border-top-style: solid;
     border-top-width: 1px;
     padding-top: 8px;
@@ -27,8 +27,12 @@
   &__menu-list-item:not(:last-child) {
     margin-right: 170px;
   }
+  &__item--text{
+    color: $white;
+    font-weight: 200;
+  }
 }
 a{
   text-decoration: none;
-  color: white;
+  color: $text;
 }

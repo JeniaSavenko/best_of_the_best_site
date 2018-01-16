@@ -1,9 +1,6 @@
 .bg-section {
   &__outer {
     display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    position: relative;
   }
   &__inner {
     background: $yellow;
