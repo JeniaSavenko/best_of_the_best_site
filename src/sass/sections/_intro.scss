@@ -44,8 +44,9 @@
     justify-content: center;
     width: 100vw;
   }
-}
-a {
-  text-decoration: none;
-  color: $text;
+  &__menu-list-item--link {
+    text-decoration: none;
+    color: $text;
+  }
+
 }

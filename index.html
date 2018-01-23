@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" type="text/css" href="src/sass/sections/_bg.scss"/>
     <meta charset="UTF-8">
     <title>best of the best site</title>
     <link rel="stylesheet" href="dist/css/style.min.css">
 </head>
 <body>
 <div class="bg-section__outer">
-    <img id="bg-img" src="src/img/main-bg.jpg" alt="">
+    <img id="bg-img" src="dist/img/main-bg.jpg" alt="">
     <div class="bg-section__inner">
         <header class="intro-section__header">
-            <img id="logo" src="src/img/logo.png" alt="">
+            <div class="intro-section__wrap">
+                <p><a href="index.html"><img id="logo" src="dist/img/logo.png" alt=""></a></p>
+            </div>
         </header>
         <main class="intro-section">
             <div class="intro-section__wrap">
@@ -20,16 +21,22 @@
                 </div>
                 <nav class="intro-section__item--menu">
                     <ul class="intro-section__menu-list">
-                        <li class="intro-section__menu-list-item"><a href="about.html">About</a></li>
-                        <li class="intro-section__menu-list-item"><a href="catalog.html">Catalog</a></li>
-                        <li class="intro-section__menu-list-item"><a href="news.html">News</a></li>
-                        <li class="intro-section__menu-list-item"><a href="contact_us.html">Contact us</a></li>
+                        <li class="intro-section__menu-list-item"><a class="intro-section__menu-list-item--link"
+                                                                     href="about.html">About</a></li>
+                        <li class="intro-section__menu-list-item"><a class="intro-section__menu-list-item--link"
+                                                                     href="catalog.html">Catalog</a></li>
+                        <li class="intro-section__menu-list-item"><a class="intro-section__menu-list-item--link"
+                                                                     href="news.html">News</a></li>
+                        <li class="intro-section__menu-list-item"><a class="intro-section__menu-list-item--link"
+                                                                     href="contact_us.html">Contact us</a></li>
                     </ul>
                 </nav>
             </div>
         </main>
         <footer class="intro-section__footer">
-            <p>Designed & Developed byEugene Savenko ©</p>
+            <div class="intro-section__wrap">
+                <p>Designed & Developed byEugene Savenko ©</p>
+            </div>
         </footer>
     </div>
 </div>

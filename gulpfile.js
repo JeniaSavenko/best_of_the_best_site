@@ -34,11 +34,12 @@ gulp.task("js", function () {
 });
 gulp.task("img", function () {
   return gulp.src("src/img/**/*")
-      .pipe(gulp.dest("dist/img/**/*"))
+      .pipe(gulp.dest("dist/img/"))
       .pipe(browserSync.reload({stream: true}))
 });
-gulp.task("watch", ["sass", "js"], function () {
+gulp.task("watch", ["sass", "js", "img"], function () {
   gulp.watch("src/sass/**/*.scss", ["sass"])
   gulp.watch("src/js/**/*.js", ["js"])
+  gulp.watch("src/img/**/*", ["img"])
 });
 gulp.task("default", ["watch"]);
