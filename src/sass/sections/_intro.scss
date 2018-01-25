@@ -4,6 +4,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media(max-width: $sm-screen){
+        display: block;
+    }
   }
   &__item {
     font-family: $ExtraLight;
@@ -43,12 +46,14 @@
     text-align: center;
     margin-bottom: 20px;
     font-family: $ExtraLight;
+
   }
   &__header {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     width: 100vw;
+
   }
   &__menu-list-item--link {
     text-decoration: none;
@@ -80,5 +85,24 @@
     width: 100px;
     height: 100px;
     opacity: .6;
+    &--hidden-for-pc{
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 30px;
+      span{
+        color: $white-transp;
+        font-size: 2.5em;
+        line-height: 50px;
+        &:first-child{
+          font-family: $ExtraLight;
+        }
+        &:last-child{
+          font-family: $Bold;
+        }
+      }
+    }
   }
+
+
+
 }

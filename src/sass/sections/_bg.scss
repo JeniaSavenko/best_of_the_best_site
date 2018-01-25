@@ -5,10 +5,10 @@
     background-image: url("../img/main-bg.jpg");
     height: 100vh;
     background-position: center;
-    @media (max-width: $sm-screen) {
-      background-position: 15% 80%;
+    @media(max-width: $sm-screen) {
+      background-position: 25% 80%;
     }
-    @media(max-width: $xs-screen){
+    @media(max-width: $xs-screen) {
       background-position: 35% 80%;
     }
   }
