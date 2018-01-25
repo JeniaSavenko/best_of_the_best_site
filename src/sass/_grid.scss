@@ -1,0 +1,49 @@
+[class $= "__wrap"] {
+  padding: {
+    right: 15px;
+    left: 15px;
+  }
+;
+  margin: auto;
+  width: calc(100% - 30px);
+  @media(min-width: $xs-screen) {
+    padding: {
+      right: 15px;
+      left: 15px;
+    }
+  ;
+    width: calc(576px - 30px);
+  }
+  @media(min-width: $sm-screen) {
+    padding: {
+      right: 15px;
+      left: 15px;
+    }
+  ;
+    width: calc(768px - 30px);
+  }
+  @media(min-width: $md-screen) {
+    padding: {
+      right: 15px;
+      left: 15px;
+    }
+  ;
+    width: calc(990px - 30px);
+  }
+  @media(min-width: $lg-screen) {
+    padding: {
+      right: 15px;
+      left: 15px;
+    }
+  ;
+    width: calc(1200px - 30px);
+  }
+ /* @media(min-width: $xlg-screen) {
+    padding: {
+      right: 15px;
+      left: 15px;
+    }
+  ;
+    width: calc(1440px - 30px);
+  }*/
+}

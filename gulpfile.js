@@ -37,7 +37,12 @@ gulp.task("img", function () {
       .pipe(gulp.dest("dist/img/"))
       .pipe(browserSync.reload({stream: true}))
 });
-gulp.task("watch", ["sass", "js", "img"], function () {
+gulp.task("fonts", function () {
+  return gulp.src("src/fonts/**/*")
+      .pipe(gulp.dest("dist/fonts/"))
+      .pipe(browserSync.reload({stream: true}))
+});
+gulp.task("watch", ["sass", "js", "img", "fonts"], function () {
   gulp.watch("src/sass/**/*.scss", ["sass"])
   gulp.watch("src/js/**/*.js", ["js"])
   gulp.watch("src/img/**/*", ["img"])
