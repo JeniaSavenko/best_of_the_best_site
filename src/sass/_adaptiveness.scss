@@ -1,0 +1,10 @@
+[class $= "--hidden-for-pc"]{
+  @media(min-width: $sm-screen-max){
+    display: none;
+  }
+}
+[class $= "--hidden-for-mob"]{
+  @media(max-width: $sm-screen){
+    display: none;
+  }
+}
