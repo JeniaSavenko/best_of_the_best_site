@@ -6,7 +6,10 @@
     height: 100vh;
     background-position: center;
     @media (max-width: $sm-screen) {
-      background-position: 25% 80%;
+      background-position: 15% 80%;
+    }
+    @media(max-width: $xs-screen){
+      background-position: 35% 80%;
     }
   }
   &__inner {
