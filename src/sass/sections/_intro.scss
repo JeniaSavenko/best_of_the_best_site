@@ -10,7 +10,7 @@
     font-size: 5em;
     color: $white-transp;
     width: 100%;
-    &--menu{
+    &--menu {
       display: flex;
       width: 100%;
     }
@@ -31,8 +31,7 @@
     border-top-width: 1px;
     padding-top: 8px;
     justify-content: space-between;
-    &-item{
-
+    &-item {
     }
   }
   &__item--text {
@@ -56,29 +55,29 @@
     text-decoration: none;
     color: $white-transp;
   }
-  &__title{
+  &__title {
     font-size: .7em;
     color: $white;
     font-family: $Regular;
     text-align: right;
-    span{
+    span {
       display: block;
-    }
-    span:first-child{
-      text-align: left;
-    }
-    span:last-child{
-      text-align: right;
-      font-family: $ExtraLight;
-      opacity: .7;
-      font-size: .5em;
-      margin:{
-        top: 20px;
-        bottom: 20px;
+      &:first-child {
+        text-align: left;
+      }
+      &:last-child {
+        text-align: right;
+        font-family: $ExtraLight;
+        opacity: .7;
+        font-size: .5em;
+        margin: {
+          top: 20px;
+          bottom: 20px;
+        }
       }
     }
   }
-  &__logo{
+  &__logo {
     width: 100px;
     height: 100px;
     opacity: .6;
