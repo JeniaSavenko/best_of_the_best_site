@@ -5,6 +5,9 @@
     background-image: url("../img/main-bg.jpg");
     height: 100vh;
     background-position: center;
+    @media (max-width: $sm-screen) {
+      background-position: 25% 80%;
+    }
   }
   &__inner {
     background: $yellow;
