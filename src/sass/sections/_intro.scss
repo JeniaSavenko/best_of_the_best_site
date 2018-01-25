@@ -4,8 +4,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    @media(max-width: $sm-screen){
-        display: block;
+    @media(max-width: $sm-screen) {
+      display: block;
     }
   }
   &__item {
@@ -46,14 +46,12 @@
     text-align: center;
     margin-bottom: 20px;
     font-family: $ExtraLight;
-
   }
   &__header {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     width: 100vw;
-
   }
   &__menu-list-item--link {
     text-decoration: none;
@@ -64,10 +62,21 @@
     color: $white;
     font-family: $Regular;
     text-align: right;
+    @media(max-width: $sm-screen) {
+      font-size: .4em;
+    }
     span {
       display: block;
       &:first-child {
         text-align: left;
+        @media(max-width: $sm-screen) {
+          display: inline;
+        }
+      }
+      &:nth-child(2) {
+        @media(max-width: $sm-screen) {
+          display: inline;
+        }
       }
       &:last-child {
         text-align: right;
@@ -85,24 +94,22 @@
     width: 100px;
     height: 100px;
     opacity: .6;
-    &--hidden-for-pc{
+    &--hidden-for-pc {
       display: inline-block;
       vertical-align: top;
       margin-left: 30px;
-      span{
+      span {
         color: $white-transp;
         font-size: 2.5em;
         line-height: 50px;
-        &:first-child{
+        &:first-child {
           font-family: $ExtraLight;
         }
-        &:last-child{
+        &:last-child {
           font-family: $Bold;
         }
       }
     }
   }
-
-
 
 }
