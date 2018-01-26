@@ -64,6 +64,7 @@
     text-align: right;
     @media(max-width: $sm-screen) {
       font-size: .4em;
+      text-align: center;
     }
     span {
       display: block;
