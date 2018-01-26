@@ -61,10 +61,11 @@
     font-size: .7em;
     color: $white;
     font-family: $Regular;
-    text-align: right;
+    @media(min-width: $sm-screen-max){
+      text-align: right;
+    }
     @media(max-width: $sm-screen) {
       font-size: .4em;
-      text-align: center;
     }
     span {
       display: block;
@@ -76,7 +77,9 @@
       }
       &:nth-child(2) {
         @media(max-width: $sm-screen) {
-          display: inline;
+          padding-bottom: 20px;
+          border-bottom: 1px solid $white-transp ;
+          text-align: right;
         }
       }
       &:last-child {
