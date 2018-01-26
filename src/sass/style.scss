@@ -1,3 +1,4 @@
+@import "reset";
 @import "vars/colors";
 @import "vars/fonts";
 @import "vars/breakpoints";
@@ -5,5 +6,5 @@
 @import "sections/intro";
 @import "sections/catalog";
 @import "grid";
-@import "reset";
 @import "adaptiveness";
+@import "sections/mob-menu";

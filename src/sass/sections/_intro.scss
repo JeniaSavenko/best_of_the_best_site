@@ -48,7 +48,7 @@
     font-family: $ExtraLight;
     &--hidden-for-pc{
       font-size: 1.5em;
-      margin-bottom: 40px;
+      padding-bottom: 30px;
     }
   }
   &__header {
@@ -91,6 +91,9 @@
         font-family: $ExtraLight;
         opacity: .7;
         font-size: .5em;
+        @media(max-width: $sm-screen){
+          font-size: .7em;
+        }
         margin: {
           top: 20px;
           bottom: 20px;
