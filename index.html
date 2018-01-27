@@ -5,13 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>best of the best site</title>
     <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="src/libs/font-awesome/css/font-awesome.min.css">
+    <script src="src/libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/js/scripts.min.js"></script>
 </head>
 <body>
 <div class="bg-section__outer">
     <div class="bg-section__inner">
         <header class="intro-section__header">
             <div class="intro-section__wrap">
-                <a href="index.html"><img class="intro-section__logo" src="dist/img/logo.png" alt=""></a>
+                <a href="index.html"><img class="intro-section__logo--default" src="dist/img/logo.png" alt=""><img
+                        class="intro-section__logo--menu" src="dist/img/logo-mob.png" alt=""></a>
                 <p class="intro-section__logo--hidden-for-pc">
                     <span>Best cars</span><br/>
                     <span>ever</span>
@@ -29,6 +33,9 @@
                 </div>
                 <nav class="intro-section__item--menu">
                     <ul class="intro-section__menu-list">
+                        <li class="intro-section__close-btn--hidden-for-pc">
+                            <a class="fa fa-close"></a>
+                        </li>
                         <li class="intro-section__menu-list-item"><a class="intro-section__menu-list-item--link"
                                                                      href="about.html">About</a></li>
                         <li class="intro-section__menu-list-item"><a class="intro-section__menu-list-item--link"
@@ -44,7 +51,8 @@
         <footer class="intro-section__footer">
             <div class="intro-section__wrap">
                 <p class="intro-section__footer--hidden-for-mob">Designed & Developed by Eugene Savenko ©</p>
-                <p class="intro-section__footer--hidden-for-pc">Tap to continue...</p>
+                <p class="intro-section__footer--hidden-for-pc"><a class="intro-section__menu-btn" href="#">Tap to
+                    continue...</a></p>
             </div>
         </footer>
     </div>

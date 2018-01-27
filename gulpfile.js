@@ -10,7 +10,7 @@ var gulp = require("gulp"),
 gulp.task("browserSync", function () {
   browserSync({
     server: {
-      baseDir: ""
+      baseDir: "./"
     },
     notify: false
   })
@@ -42,9 +42,20 @@ gulp.task("fonts", function () {
       .pipe(gulp.dest("dist/fonts/"))
       .pipe(browserSync.reload({stream: true}))
 });
-gulp.task("watch", ["sass", "js", "img", "fonts"], function () {
-  gulp.watch("src/sass/**/*.scss", ["sass"])
-  gulp.watch("src/js/**/*.js", ["js"])
-  gulp.watch("src/img/**/*", ["img"])
+gulp.task("js-libs", function () {
+  return gulp.src("libs/**/*.min.js*")
+      .pipe(gulp.dest("dist/libs/"))
+});
+
+gulp.task("css-libs", function () {
+  return gulp.src("libs/**/*.min.css*")
+      .pipe(gulp.dest("dist/libs/"))
+});
+gulp.task("watch", ["sass", "js", "img", "fonts", "js-libs", "css-libs", "browserSync"], function () {
+  gulp.watch("src/sass/**/*.scss", ["sass"]);
+  gulp.watch("src/js/**/*.js", ["js"]);
+  gulp.watch("src/img/**/*", ["img"]);
+  gulp.watch("src/libs/**/*", ["js-libs"]);
+  gulp.watch("src/libs/**/*", ["css-libs"]);
 });
 gulp.task("default", ["watch"]);

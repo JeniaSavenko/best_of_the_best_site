@@ -46,7 +46,7 @@
     text-align: center;
     margin-bottom: 20px;
     font-family: $ExtraLight;
-    &--hidden-for-pc{
+    &--hidden-for-pc {
       font-size: 1.5em;
       padding-bottom: 30px;
     }
@@ -65,7 +65,7 @@
     font-size: .7em;
     color: $white;
     font-family: $Regular;
-    @media(min-width: $sm-screen-max){
+    @media(min-width: $sm-screen-max) {
       text-align: right;
     }
     @media(max-width: $sm-screen) {
@@ -82,7 +82,7 @@
       &:nth-child(2) {
         @media(max-width: $sm-screen) {
           padding-bottom: 20px;
-          border-bottom: 1px solid $white-transp ;
+          border-bottom: 1px solid $white-transp;
           text-align: right;
         }
       }
@@ -91,7 +91,7 @@
         font-family: $ExtraLight;
         opacity: .7;
         font-size: .5em;
-        @media(max-width: $sm-screen){
+        @media(max-width: $sm-screen) {
           font-size: .7em;
         }
         margin: {
@@ -102,9 +102,11 @@
     }
   }
   &__logo {
-    width: 100px;
-    height: 100px;
-    opacity: .6;
+    &--default, &--menu {
+      width: 100px;
+      height: 100px;
+      opacity: .6;
+    }
     &--hidden-for-pc {
       display: inline-block;
       vertical-align: top;
@@ -123,4 +125,9 @@
     }
   }
 
+
+  &__menu-btn {
+    color: $white;
+    text-decoration: none;
+  }
 }
