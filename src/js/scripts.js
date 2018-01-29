@@ -3,6 +3,7 @@ $(document).ready(function () {
 
 
   function mMenu() {
+    $(".intro-section__logo--menu").hide();
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
       var btnMenu = $(".intro-section__menu-btn");
       var menu = $(".intro-section__item--menu");
@@ -13,7 +14,7 @@ $(document).ready(function () {
         menu.show().addClass("collapse");
       });
 
-      $(".intro-section__logo--menu").hide();
+
       menu.hide();
 
       if (menu.hasClass("collapse")) {
