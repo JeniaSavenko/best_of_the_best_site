@@ -3,31 +3,28 @@ $(document).ready(function () {
 
 
   function mMenu() {
-    $(".intro-section__logo--menu").hide();
-    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-      var btnMenu = $(".intro-section__menu-btn");
-      var menu = $(".intro-section__item--menu");
-      var closeBtn = $(".intro-section__close-btn--hidden-for-pc");
+    var btnMenu = $(".intro-section__menu-btn");
+    var menu = $(".intro-section__item--menu");
+    var closeBtn = $(".intro-section__close-btn--hidden-for-pc");
+    var menuLogo = $(".intro-section__logo--menu");
+    var defLogo = $(".intro-section__logo--default");
 
+    defLogo.show();
+    menuLogo.hide();
 
+    if ($(window).width() <= 768) {
       btnMenu.on("click", function () {
         menu.show().addClass("collapse");
+        defLogo.hide();
+        menuLogo.show();
       });
-
 
       menu.hide();
 
-      if (menu.hasClass("collapse")) {
-        $(".intro-section__logo--menu").show();
-        $(".intro-section__logo--default").hide();
-        menu.hide();
-      }
-      ;
-
-
-
       closeBtn.on("click", function () {
         menu.hide().removeClass("collapse");
+        defLogo.show();
+        menuLogo.hide();
       });
     }
   }
