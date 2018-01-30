@@ -1,0 +1,28 @@
+.intro-section__menu-btn--hidden-for-pc {
+  position: absolute;
+  background: none;
+  border: 0;
+  top: 20px;
+  right: 15px;
+  .icon-bar {
+    display: block;
+    height: 3px;
+    width: 40px;
+    background-color: $white-transp;
+    transition: $med-transition;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+    &:focus{
+      &:first-child {
+        transform: rotate(45grad);
+      }
+      &:nth-child(2) {
+        transform: rotate(270grad) scale(0);
+      }
+      &:last-child {
+        transform: rotate(-45grad);
+      }
+    }
+  }
+}

@@ -6,7 +6,7 @@
         position: absolute;
         top: 20px;
         right: 15px;
-        color: $dark-grey;
+        color: $grey;
         text-decoration: none;
         font-size: 20px;
       }
@@ -15,6 +15,7 @@
         position: absolute;
         left: 0;
         background-image: url("../img/main-bg.jpg");
+        background-position: 35% 90%;
         top: 0;
         height: 100vh;
         width: 100vw;
@@ -23,10 +24,19 @@
           flex-direction: column;
           background: $white-mob-bg;
           padding-top: 100px;
-          justify-content: space-around;
+          justify-content: center;
+          line-height: 80px;
+          [class$="-item"]{
+              border-top: 1px solid;
+            &:last-child{
+              border-bottom: 1px solid;
+            }
+
+          }
           [class$="-item--link"] {
+            margin-left: 40px;
             color: $dark-grey;
-            font-family: $Regular;
+            font-family: $Medium;
           }
         }
 
@@ -36,18 +46,36 @@
         z-index: 3;
         top: 0;
         width: 100%;
-      }
-
-
-
         [class$="--menu"] {
           width: 70px;
           height: 70px;
           opacity: 1;
-          position: absolute;
-          z-index: 3;
         }
-
+        [class$="--hidden-for-pc"] {
+          margin-left: 10px;
+          span {
+            color: $grey;
+            font-size: 1.5em;
+            line-height: 35px;
+          }
+        }
+      }
+      &__footer {
+        position: absolute;
+        z-index: 3;
+        bottom: 0;
+        [class $="item"]{
+          display: flex;
+          color: $grey;
+          font-family: $Regular;
+          letter-spacing: -.01em;
+          justify-content: center;
+        }
+      }
+    }
+  }
+  .intro-section {
+    [class*= "close-btn"] {
     }
   }
 }
