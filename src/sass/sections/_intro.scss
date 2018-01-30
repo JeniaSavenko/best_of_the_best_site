@@ -13,6 +13,12 @@
     font-size: 5em;
     color: $white-transp;
     width: 100%;
+    &--title{
+      text-align: center;
+    }
+    &--text{
+      margin-top: 20px;
+    }
     &--menu {
       display: flex;
       width: 100%;
@@ -47,7 +53,7 @@
     margin-bottom: 20px;
     font-family: $ExtraLight;
     p {
-      font-size: 1.5em;
+      font-size: 1em;
       padding-bottom: 30px;
     }
   }
