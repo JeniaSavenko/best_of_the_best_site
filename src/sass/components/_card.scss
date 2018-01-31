@@ -1,0 +1,26 @@
+.card {
+  border: 1px solid $border-grey;
+}
+.card-header {
+  img {
+    max-width: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+.card-content {
+  padding: 15px 20px;
+  font-size: 12px;
+  position: relative;
+}
+.card-bottom {
+  text-align: center;
+}
+.card-link {
+  color: $solid-yellow;
+}
+.card-goto-link {
+  display: block;
+  position: absolute;
+  background-color: $solid-yellow;
+}

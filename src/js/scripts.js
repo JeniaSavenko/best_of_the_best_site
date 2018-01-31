@@ -18,6 +18,9 @@ $(document).ready(function () {
       btnMenu.on("click tap", function () {
         if ($(document).find(".collapse").length > 0) {
           menu.attr("aria-expanded", "false");
+          if(menu.attr("aria-expanded", "false")){
+            btnMenu.removeClass("opn-btn");
+          }
           menu.hide().removeClass("collapse");
           headerMenu.removeClass("collapse");
           footerMenu.removeClass("collapse");
@@ -26,12 +29,16 @@ $(document).ready(function () {
         }
         else {
           menu.attr("aria-expanded", "true");
+          if(menu.attr("aria-expanded", "true")){
+            btnMenu.addClass("opn-btn");
+          }
           menu.show().addClass("collapse");
           headerMenu.addClass("collapse");
           footerMenu.addClass("collapse");
           defLogo.hide();
           menuLogo.show();
         }
+
       });
       menu.hide();
     }

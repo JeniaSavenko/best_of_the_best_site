@@ -13,15 +13,20 @@
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-    &:focus{
+
+  }
+}
+.opn-btn {
+  &:focus {
+    span {
       &:first-child {
-        transform: rotate(45grad);
+        transform: rotate(-45deg) translate(-9px, 6px);
       }
       &:nth-child(2) {
         transform: rotate(270grad) scale(0);
       }
       &:last-child {
-        transform: rotate(-45grad);
+        transform: rotate(45deg) translate(-8px, -8px);
       }
     }
   }

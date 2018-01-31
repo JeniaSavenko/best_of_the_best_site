@@ -118,9 +118,11 @@
       opacity: .6;
     }
     &--hidden-for-pc {
+      @media(max-width: $sm-screen){
       display: inline-block;
       vertical-align: top;
       margin-left: 30px;
+      }
       span {
         color: $white-transp;
         font-size: 2em;

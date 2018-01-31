@@ -1,0 +1,25 @@
+.sidebar-section {
+  width: $sidebar-width;
+  position: fixed;
+  left: 0;
+  top: 81px;
+  height: calc(100% - 81px);
+  border-right: 1px solid $border-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  &__menu {
+    &-item {
+      border-bottom: 1px solid $border-grey;
+      padding: {
+        top: 30px;
+        bottom: 30px;
+        left: 15px;
+      }
+    ;
+    }
+    &-link{
+
+    }
+  }
+}

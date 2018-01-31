@@ -43,12 +43,16 @@
   ;
     width: calc(1200px - 30px);
   }
- /* @media(min-width: $xlg-screen) {
-    padding: {
-      right: 15px;
-      left: 15px;
-    }
-  ;
-    width: calc(1440px - 30px);
-  }*/
+}
+
+[class*="--s6"]{
+  @media (min-width: $sm-screen) {
+    width: 50%;
+  }
+}
+
+[class*="--m4"]{
+  @media (min-width: $md-screen) {
+    width: 33.3%;
+  }
 }

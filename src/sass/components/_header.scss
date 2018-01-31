@@ -1,0 +1,15 @@
+.cmn-section{
+  &__header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: $light-grey;
+    &-item{
+      @media (min-width: $sm-screen-max) {
+        width: $sidebar-width;
+        border-right: 1px solid $border-grey;
+      }
+    }
+  }
+}

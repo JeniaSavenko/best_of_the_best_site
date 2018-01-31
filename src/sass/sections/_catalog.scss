@@ -1,17 +1,16 @@
-.catalog-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: stretch;
-  &__header {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0;
-    left: 0;
+.catalog-section{
+  width: calc(100% - 300px);
+  margin-left: auto;
+  margin-top: 81px;
+  [class*="__item--"]{
+    //@extend .card;
+
   }
-  &__header--menu-list{
-    display: inline;
-    list-style-type: none;
+  [class$="__item-top"]{
+    @extend .card-header;
+  }
+  &__inner{
+    display: flex;
+    flex-wrap: wrap;
   }
 }
