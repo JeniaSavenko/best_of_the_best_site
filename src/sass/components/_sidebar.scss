@@ -11,18 +11,20 @@
   &__menu {
     &-item {
       border-bottom: 1px solid $border-grey;
-      padding: {
-        top: 30px;
-        bottom: 30px;
-        left: 15px;
-      }
-    ;
+
     }
     &-link {
       font-size: 1.5em;
       letter-spacing: 3px;
       color: $dark-grey;
       text-decoration: none;
+      display: block;
+      padding: {
+        top: 30px;
+        bottom: 30px;
+        left: 15px;
+      }
+    ;
     }
   }
   &__footer {

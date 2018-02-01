@@ -24,6 +24,7 @@
   }
   &__item {
     &-content {
+      position: relative;
       margin: {
         top: 5px;
         left: 10px;
@@ -43,5 +44,27 @@
       text-decoration: none;
       font-size: 1.3em;
     }
+  }
+  &__link--goto{
+      background-color: $solid-yellow;
+      color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      padding: 20px;
+      font-weight: bold;
+      font-size: 30px;
+      line-height: .5;
+      top: -100%;
+      transform: translateY(20%);
+      right: 10%;
+      box-shadow: 0 0 5px 0 #222;
+      transition: .3s;
+      cursor: pointer;
+      text-decoration: none;
+      &:hover {
+        background-color: lighten($solid-yellow, 7);
+        top: calc(-100% - 7px);
+      }
   }
 }
