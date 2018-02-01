@@ -1,16 +1,47 @@
-.catalog-section{
+.catalog-section {
   width: calc(100% - 300px);
   margin-left: auto;
   margin-top: 81px;
-  [class*="__item--"]{
-    //@extend .card;
+  [class*="__item--"] {
+    @extend .card;
 
   }
-  [class$="__item-top"]{
+  [class$="__item-top"] {
     @extend .card-header;
   }
-  &__inner{
+  &__inner {
     display: flex;
     flex-wrap: wrap;
+  }
+  [class$="--label"], [class$="--def"] {
+    display: inline;
+  }
+  [class$="--label"] {
+    text-transform: capitalize;
+    &:after {
+      content: ":";
+    }
+  }
+  &__item {
+    &-content {
+      margin: {
+        top: 5px;
+        left: 10px;
+      }
+    ;
+      font-family: $Regular;
+    }
+    &-bottom{
+      text-align: center;
+      margin:{
+        top: 7px;
+        bottom: 7px;
+      };
+    }
+    &-title{
+      color: $solid-yellow;
+      text-decoration: none;
+      font-size: 1.3em;
+    }
   }
 }

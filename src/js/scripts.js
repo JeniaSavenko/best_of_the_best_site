@@ -1,5 +1,8 @@
 $(document).ready(function () {
   mMenu();
+  var log = window.location.href;
+  var logText = log.text();
+  console.log(logText);
 
 
   function mMenu() {
@@ -42,6 +45,8 @@ $(document).ready(function () {
       });
       menu.hide();
     }
+
   }
+
 });
 
