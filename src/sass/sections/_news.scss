@@ -15,7 +15,7 @@
   }
   &__item {
     &-content {
-      margin: {
+      padding: {
         top: 25px;
         left: 10px;
       }
@@ -23,7 +23,7 @@
     }
     &-bottom{
       @extend .card-bottom;
-      margin:{
+     padding:{
         top: 15px;
         bottom: 7px;
       };
@@ -42,7 +42,7 @@
     font-weight: bold;
     font-size: 30px;
     line-height: .5;
-    top: -215%;
+    top: -70%;
     transform: translateY(20%);
     right: 10%;
     box-shadow: 0 0 5px 0 #222;
@@ -51,7 +51,7 @@
     text-decoration: none;
     &:hover {
       background-color: lighten($solid-yellow, 7);
-      top: calc(-240% - 7px);
+      top: calc(-70% - 7px);
     }
   }
 }

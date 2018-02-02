@@ -24,7 +24,7 @@
   }
   &__item {
     &-content {
-      margin: {
+      padding: {
         top: 5px;
         left: 10px;
       }
@@ -32,7 +32,7 @@
     }
     &-bottom{
       @extend .card-bottom;
-      margin:{
+      padding:{
         top: 7px;
         bottom: 7px;
       };
