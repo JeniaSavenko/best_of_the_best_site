@@ -42,13 +42,15 @@ gulp.task("fonts", function () {
       .pipe(gulp.dest("dist/fonts/"))
       .pipe(browserSync.reload({stream: true}))
 });
-gulp.task("js-libs", function () {
-  return gulp.src("libs/**/*.min.js*")
-      .pipe(gulp.dest("dist/libs/"))
+gulp.task('js-libs', function() {
+  return gulp.src(["src/libs/jquery/**/*.js"])
+      .pipe(concat('jquery.min.js'))
+      .pipe(uglifyJs())
+      .pipe(gulp.dest('dist/libs/jquery'));
 });
 
 gulp.task("css-libs", function () {
-  return gulp.src("libs/**/*.min.css*")
+  return gulp.src("src/libs/**/*.min.css*")
       .pipe(gulp.dest("dist/libs/"))
 });
 gulp.task("watch", ["sass", "js", "img", "fonts", "js-libs", "css-libs", "browserSync"], function () {

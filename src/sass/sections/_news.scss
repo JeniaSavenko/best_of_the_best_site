@@ -1,4 +1,4 @@
-.catalog-section {
+.news-section {
   width: calc(100% - 300px);
   margin-left: auto;
   margin-top: 81px;
@@ -13,19 +13,10 @@
     display: flex;
     flex-wrap: wrap;
   }
-  [class$="--label"], [class$="--def"] {
-    display: inline;
-  }
-  [class$="--label"] {
-    text-transform: capitalize;
-    &:after {
-      content: ":";
-    }
-  }
   &__item {
     &-content {
       margin: {
-        top: 5px;
+        top: 25px;
         left: 10px;
       }
       @extend .card-content;
@@ -33,7 +24,7 @@
     &-bottom{
       @extend .card-bottom;
       margin:{
-        top: 7px;
+        top: 15px;
         bottom: 7px;
       };
     }
@@ -51,7 +42,7 @@
     font-weight: bold;
     font-size: 30px;
     line-height: .5;
-    top: -100%;
+    top: -215%;
     transform: translateY(20%);
     right: 10%;
     box-shadow: 0 0 5px 0 #222;
@@ -60,7 +51,7 @@
     text-decoration: none;
     &:hover {
       background-color: lighten($solid-yellow, 7);
-      top: calc(-100% - 7px);
+      top: calc(-240% - 7px);
     }
   }
 }

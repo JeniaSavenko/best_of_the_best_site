@@ -9,18 +9,17 @@
   }
 }
 .card-content {
-  padding: 15px 20px;
-  font-size: 12px;
   position: relative;
+  font-family: $Regular;
 }
 .card-bottom {
   text-align: center;
 }
-.card-link {
+.card-title {
   color: $solid-yellow;
+  text-decoration: none;
+  font-size: 1.3em;
 }
 .card-goto-link {
-  display: block;
-  position: absolute;
-  background-color: $solid-yellow;
+
 }

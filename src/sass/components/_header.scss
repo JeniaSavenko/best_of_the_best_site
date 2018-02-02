@@ -6,6 +6,7 @@
     right: 0;
     height: 81px;
     background-color: $light-grey;
+    z-index: 1;
     &-item{
       @media (min-width: $sm-screen-max) {
         width: $sidebar-width;
