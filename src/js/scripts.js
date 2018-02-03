@@ -1,5 +1,8 @@
 $(document).ready(function () {
+
   mMenu();
+
+  sidebarCollapse();
 
 
   function mMenu() {
@@ -18,7 +21,7 @@ $(document).ready(function () {
       btnMenu.on("click tap", function () {
         if ($(document).find(".collapse").length > 0) {
           menu.attr("aria-expanded", "false");
-          if(menu.attr("aria-expanded", "false")){
+          if (menu.attr("aria-expanded", "false")) {
             btnMenu.removeClass("opn-btn");
           }
           menu.hide().removeClass("collapse");
@@ -29,7 +32,7 @@ $(document).ready(function () {
         }
         else {
           menu.attr("aria-expanded", "true");
-          if(menu.attr("aria-expanded", "true")){
+          if (menu.attr("aria-expanded", "true")) {
             btnMenu.addClass("opn-btn");
           }
           menu.show().addClass("collapse");
@@ -45,5 +48,15 @@ $(document).ready(function () {
 
   }
 
+  function sidebarCollapse() {
+    var btn = $(".cmn-section__menu-btn--hidden-for-pc");
+    var sidebar = $(".sidebar-section");
+    var body = $(".news-section, .about-section, .catalog-section, .contact-us-section");
+
+    btn.on("click tap", function () {
+      sidebar.toggleClass("sidebar-show");
+      body.toggleClass("ml-auto");
+    });
+  }
 });
 

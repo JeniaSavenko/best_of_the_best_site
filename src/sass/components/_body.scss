@@ -1,4 +1,24 @@
 body{
   font-family: $Regular;
   color: $grey;
+
+  img{
+    max-width: 100%;
+  }
+
+
+}
+.about, .news, .catalog, .contact_us main {
+  overflow-x: hidden!important;
+}
+
+.sidebar-show {
+  left: 0!important;
+  transition: ease-in-out .3s!important;
+}
+
+.ml-auto {
+  margin-left: $sidebar-width!important;
+  width: calc(100% - 300px)!important;
+  transition: ease-in-out .3s!important;
 }
