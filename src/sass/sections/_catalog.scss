@@ -1,7 +1,12 @@
 .catalog-section {
-  width: calc(100% - 300px);
-  margin-left: auto;
+  width: 100%;
+  margin-left: 0;
   margin-top: 81px;
+  transition: ease-in-out .3s;
+  @media (min-width: $md-screen) {
+    margin-left: auto;
+    width: calc(100% - 300px);
+  }
   [class*="__item--"] {
     @extend .card;
 

@@ -74,8 +74,22 @@
       }
     }
   }
-  .intro-section {
-    [class*= "close-btn"] {
+}
+
+@media (max-width: $sm-screen) {
+  .cmn-section__header {
+    [class*="__menu-btn"] {
+      border: 0;
+      background: none;
+      .icon-bar {
+        width: 30px;
+        height: 3px;
+        background-color: $dark-grey;
+        display: block;
+        &:not(:last-child) {
+          margin-bottom: 5px;
+        }
+      }
     }
   }
 }

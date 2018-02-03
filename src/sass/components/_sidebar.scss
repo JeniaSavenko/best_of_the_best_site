@@ -1,13 +1,18 @@
 .sidebar-section {
   width: $sidebar-width;
   position: fixed;
-  left: 0;
+  left: -300px;
   top: 81px;
   height: calc(100% - 81px);
   border-right: 1px solid $border-grey;
+  background-color: $white;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  transition: ease-in-out .3s;
+  @media (min-width: $md-screen) {
+    left: 0;
+  }
   &__menu {
     &-item {
       border-bottom: 1px solid $border-grey;
@@ -35,4 +40,6 @@
     }
   ;
   }
+
+
 }

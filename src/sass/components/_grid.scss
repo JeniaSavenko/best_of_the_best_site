@@ -58,3 +58,17 @@
     width: 33.3%;
   }
 }
+
+[class*="--m6"]{
+  width: 100%;
+  @media (min-width: $md-screen) {
+    width: 50%;
+  }
+}
+
+[class*="--m5"]{
+  width: 100%;
+  @media (min-width: $md-screen) {
+    width: 41.6%;
+  }
+}

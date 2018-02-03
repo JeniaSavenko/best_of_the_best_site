@@ -3,166 +3,74 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
-    <title>Catalog</title>
+    <title>About</title>
     <link rel="stylesheet" href="dist/css/style.min.css">
+    <link rel="stylesheet" href="dist/libs/font-awesome/css/font-awesome.min.css">
+    <script src="src/libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/js/scripts.min.js"></script>
 </head>
-<body>
+<body class="about">
 <header class="cmn-section__header">
     <div class="cmn-section__header-item">
-        <div class="cmn-section__logo"><a href="index.html"><img src="dist/img/full-logo.png" alt="logo"></a></div>
+        <div class="cmn-section__logo"><a href="index.html"><img src="dist/img/full-logo.png" alt="logo"></a>
+            <button class="cmn-section__menu-btn--hidden-for-pc">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
     </div>
 </header>
 <main class="cmn-section">
     <aside class="sidebar-section">
         <ul class="sidebar-section__menu">
-            <li style="background-color: rgb(157, 120, 3)" class="sidebar-section__menu-item"><a style="color: white" href="about.html" class="sidebar-section__menu-link">About</a></li>
-            <li class="sidebar-section__menu-item"><a  href="catalog.html" class="sidebar-section__menu-link">Catalog</a></li>
+            <li style="background-color: rgb(157, 120, 3)" class="sidebar-section__menu-item"><a style="color: white"
+                                                                                                 href="about.html"
+                                                                                                 class="sidebar-section__menu-link">About</a>
+            </li>
+            <li class="sidebar-section__menu-item"><a href="catalog.html" class="sidebar-section__menu-link">Catalog</a>
+            </li>
             <li class="sidebar-section__menu-item"><a href="news.html" class="sidebar-section__menu-link">News</a></li>
-            <li class="sidebar-section__menu-item"><a href="contact_us.html" class="sidebar-section__menu-link">Contact Us</a></li>
+            <li class="sidebar-section__menu-item"><a href="contact_us.html" class="sidebar-section__menu-link">Contact
+                Us</a></li>
         </ul>
         <div class="sidebar-section__footer"><p>Designed & Developed by Eugene Savenko ©</p></div>
     </aside>
-    <section class="catalog-section">
-        <div class="catalog-section__inner">
-            <div class="catalog-setion__item--m4--s6">
-                <div class="catalog-section__item-wrap">
-                    <div class="catalog-section__item-top"><img src="dist/img/car.jpg" alt="car"></div>
-                    <div class="catalog-section__item-content">
-                        <a href="#" class="catalog-section__link--goto">+</a>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">year</div>
-                            <div class="catalog-section__text--def">2017</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">type</div>
-                            <div class="catalog-section__text--def">coupe</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">model</div>
-                            <div class="catalog-section__text--def">m4</div>
-                        </div>
+    <section class="about-section">
+        <div class="about-section__inner">
+            <div class="about-section__title">Our story</div>
+            <div class="about-section__inner-wrap">
+                <div class="about-section__item--m5">
+                    <div class="about-section__item-wrap">
+                        <p>Lorem ipsum dolor sit amet, consectetur
+                            adipiscing
+                            elit. Sed ex eros, hendrerit ut velit quis, viverra efficitur nisl. Etiam nibh urna,
+                            lobortis at molestie at, commodo ac enim. Aenean tempus ac justo eu rhoncus.
+                            Pellentesque non orci a neque rhoncus tempus eget ut urna. Nulla vestibulum nulla tempor
+                            purus maximus, vitae mattis risus porta. Aliquam erat volutpat. Suspendisse metus sem,
+                            bibendum tempor augue vitae, dapibus ultricies lacus. Curabitur vulputate accumsan
+                            ipsum, eget posuere sem. Duis et nibh volutpat, maximus metus eu, aliquam urna.
+                            Suspendisse vestibulum congue egestas. Quisque sit amet justo pulvinar, luctus eros in,
+                            placerat tellus. Sed vel sem ultricies, placerat tellus quis, finibus ligula.</p>
                     </div>
-                    <div class="catalog-section__item-bottom">
-                        <a href="#" class="catalog-section__item-title">BMW: M4 2dr DCT</a>
+                </div>
+                <div class="about-section__item--m5">
+                    <div class="about-section__item-top">
+                        <img src="dist/img/head.jpg" alt="office">
+                    </div>
+                    <div class="about-section__content">
+                        <p>Proin sagittis erat nec sollicitudin cursus.
+                            Cras
+                            a mollis ipsum. Donec velit mi, scelerisque sed sem ut, pulvinar interdum sem. Sed
+                            vestibulum augue dolor, consequat feugiat nunc fermentum eget. Vestibulum lacinia
+                            quis neque eget condimentum. Morbi eleifend lacus quis ante aliquet vestibulum. In
+                            risus ante, lacinia ac nunc at, placerat consequat arcu.
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="catalog-setion__item--m4--s6">
-                <div class="catalog-section__item-wrap">
-                    <div class="catalog-section__item-top"><img src="dist/img/car.jpg" alt="car"></div>
-                    <div class="catalog-section__item-content">
-                        <a href="#" class="catalog-section__link--goto">+</a>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">year</div>
-                            <div class="catalog-section__text--def">2017</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">type</div>
-                            <div class="catalog-section__text--def">coupe</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">model</div>
-                            <div class="catalog-section__text--def">m4</div>
-                        </div>
-                    </div>
-                    <div class="catalog-section__item-bottom">
-                        <a href="#" class="catalog-section__item-title">BMW: M4 2dr DCT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog-setion__item--m4--s6">
-                <div class="catalog-section__item-wrap">
-                    <div class="catalog-section__item-top"><img src="dist/img/car.jpg" alt="car"></div>
-                    <div class="catalog-section__item-content">
-                        <a href="#" class="catalog-section__link--goto">+</a>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">year</div>
-                            <div class="catalog-section__text--def">2017</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">type</div>
-                            <div class="catalog-section__text--def">coupe</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">model</div>
-                            <div class="catalog-section__text--def">m4</div>
-                        </div>
-                    </div>
-                    <div class="catalog-section__item-bottom">
-                        <a href="#" class="catalog-section__item-title">BMW: M4 2dr DCT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog-setion__item--m4--s6">
-                <div class="catalog-section__item-wrap">
-                    <div class="catalog-section__item-top"><img src="dist/img/car.jpg" alt="car"></div>
-                    <div class="catalog-section__item-content">
-                        <a href="#" class="catalog-section__link--goto">+</a>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">year</div>
-                            <div class="catalog-section__text--def">2017</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">type</div>
-                            <div class="catalog-section__text--def">coupe</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">model</div>
-                            <div class="catalog-section__text--def">m4</div>
-                        </div>
-                    </div>
-                    <div class="catalog-section__item-bottom">
-                        <a href="#" class="catalog-section__item-title">BMW: M4 2dr DCT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog-setion__item--m4--s6">
-                <div class="catalog-section__item-wrap">
-                    <div class="catalog-section__item-top"><img src="dist/img/car.jpg" alt="car"></div>
-                    <div class="catalog-section__item-content">
-                        <a href="#" class="catalog-section__link--goto">+</a>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">year</div>
-                            <div class="catalog-section__text--def">2017</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">type</div>
-                            <div class="catalog-section__text--def">coupe</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">model</div>
-                            <div class="catalog-section__text--def">m4</div>
-                        </div>
-                    </div>
-                    <div class="catalog-section__item-bottom">
-                        <a href="#" class="catalog-section__item-title">BMW: M4 2dr DCT</a>
-                    </div>
-                </div>
-            </div>
-            <div class="catalog-setion__item--m4--s6">
-                <div class="catalog-section__item-wrap">
-                    <div class="catalog-section__item-top"><img src="dist/img/car.jpg" alt="car"></div>
-                    <div class="catalog-section__item-content">
-                        <a href="#" class="catalog-section__link--goto">+</a>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">year</div>
-                            <div class="catalog-section__text--def">2017</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">type</div>
-                            <div class="catalog-section__text--def">coupe</div>
-                        </div>
-                        <div class="catalog-section__text-wrap">
-                            <div class="catalog-section__text--label">model</div>
-                            <div class="catalog-section__text--def">m4</div>
-                        </div>
-                    </div>
-                    <div class="catalog-section__item-bottom">
-                        <a href="#" class="catalog-section__item-title">BMW: M4 2dr DCT</a>
-                    </div>
-                </div>
-            </div>
-        </div></section>
+        </div>
+    </section>
 </main>
 </body>
 </html>
