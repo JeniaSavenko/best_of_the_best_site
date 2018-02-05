@@ -9,14 +9,16 @@
   }
   [class*="__item--"] {
     @extend .card;
-
+    margin-bottom: 45px;
   }
   [class$="__item-top"] {
-    @extend .card-header;
+   // @extend .card-header;
   }
   &__inner {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
   }
   &__item {
     &-content {

@@ -72,3 +72,9 @@
     width: 41.6%;
   }
 }
+[class*="--m8"]{
+  width: 100%;
+  @media (min-width: $md-screen) {
+    width: 80%;
+  }
+}
