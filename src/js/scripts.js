@@ -51,12 +51,14 @@ $(document).ready(function () {
   function sidebarCollapse() {
     var btn = $(".cmn-section__menu-btn--hidden-for-pc");
     var sidebar = $(".sidebar-section");
-    var body = $(".news-section, .about-section, .catalog-section, .contact-us-section");
+    var body = $(".news-section, .about-section, .catalog-section, .contact-us-section, .product-section") ;
 
     btn.on("click tap", function () {
       sidebar.toggleClass("sidebar-show");
       body.toggleClass("ml-auto");
     });
   }
+
+  $('.carousel').carousel();
 });
 

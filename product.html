@@ -6,10 +6,13 @@
     <title>Catalog</title>
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="stylesheet" href="dist/libs/font-awesome/css/font-awesome.min.css">
-    <script src="src/libs/jquery/dist/jquery.min.js"></script>
+    <script src="dist/libs/jquery/dist/jquery.min.js"></script>
     <script src="dist/js/scripts.min.js"></script>
+    <script src="dist/libs/carousel/materialize.js"></script>
+    <script src="dist/libs/carousel/carousel.js"></script>
+
 </head>
-<body class="catalog">
+<body class="product">
 <header class="cmn-section__header">
     <div class="cmn-section__header-item">
         <div class="cmn-section__logo"><a href="index.html"><img src="dist/img/full-logo.png" alt="logo"></a></div>
@@ -25,17 +28,48 @@
 <main class="cmn-section">
     <aside class="sidebar-section">
         <ul class="sidebar-section__menu">
-            <li class="sidebar-section__menu-item"><a href="about.html" class="sidebar-section__menu-link">About</a></li>
-            <li style="background-color: rgb(157, 120, 3)" class="sidebar-section__menu-item"><a style="color: white" href="catalog.html" class="sidebar-section__menu-link">Catalog</a></li>
+            <li class="sidebar-section__menu-item"><a href="about.html" class="sidebar-section__menu-link">About</a>
+            </li>
+            <li style="background-color: rgb(157, 120, 3)" class="sidebar-section__menu-item"><a style="color: white"
+                                                                                                 href="catalog.html"
+                                                                                                 class="sidebar-section__menu-link">Catalog</a>
+            </li>
             <li class="sidebar-section__menu-item"><a href="news.html" class="sidebar-section__menu-link">News</a></li>
-            <li class="sidebar-section__menu-item"><a href="contact_us.html" class="sidebar-section__menu-link">Contact Us</a></li>
+            <li class="sidebar-section__menu-item"><a href="contact_us.html" class="sidebar-section__menu-link">Contact
+                Us</a></li>
         </ul>
         <div class="sidebar-section__footer"><p>Designed & Developed by Eugene Savenko ©</p></div>
     </aside>
-    <section class="catalog-section">
-        <div class="catalog-section__inner">
+    <section class="product-section">
+        <div class="product-section__inner">
+            <div class="carousel product-section__item-list">
+                <a class="carousel-item product-section__item" href="#"><img src="/dist/img/about-pic.jpg"></a>
+                <a class="carousel-item product-section__item" href="#"><img src="/dist/img/main-bg.jpg"></a>
+                <a class="carousel-item product-section__item" href="#"><img src="/dist/img/about-bg.jpg"></a>
+                <a class="carousel-item product-section__item" href="#"><img src="/dist/img/car.jpg"></a>
+                <a class="carousel-item product-section__item" href="#"><img src="/dist/img/head.jpg"></a>
+            </div>
 
-        </div></section>
+            <div class="product-section__content">
+                <div class="product-section__item">
+                    <div class="product-section__item-label">Year</div>
+                    <div class="product-section__item-def">2017</div>
+                </div>
+                <div class="product-section__item">
+                    <div class="product-section__item-label">Year</div>
+                    <div class="product-section__item-def">2017</div>
+                </div>
+                <div class="product-section__item">
+                    <div class="product-section__item-label">Year</div>
+                    <div class="product-section__item-def">2017</div>
+                </div>
+                <div class="product-section__item">
+                    <div class="product-section__item-label">Year</div>
+                    <div class="product-section__item-def">2017</div>
+                </div>
+            </div>
+        </div>
+    </section>
 </main>
 </body>
 </html>

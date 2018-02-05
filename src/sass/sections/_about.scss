@@ -52,6 +52,13 @@
     letter-spacing: 4px;
     font-size: 18px;
     line-height: 1.3;
+    img {
+      margin: 15px;
+      @media (min-width: $md-screen) {
+        max-width: 50%;
+        float: left;
+      }
+    }
   }
 
   &__item-top {

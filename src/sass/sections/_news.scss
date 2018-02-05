@@ -7,51 +7,92 @@
     margin-left: auto;
     width: calc(100% - 300px);
   }
-  [class*="__item--"] {
-    @extend .card;
-    margin-bottom: 45px;
-  }
-  [class$="__item-top"] {
-   // @extend .card-header;
-  }
   &__inner {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
   }
-  &__item {
-    &-content {
-      padding: 25px 15px;
-      @extend .card-content;
-    }
-    &-bottom{
-      @extend .card-bottom;
-     padding-bottom: 15px;
-    }
-    &-title{
-      @extend .card-title;
+  [class*="__item--"] {
+    @extend .news-card;
+  }
+  [class$="__item-top"] {
+    @extend .news-card-top;
+  }
+
+  [class$="__item-content"] {
+    @extend .news-card-content;
+  }
+
+  [class*="__text-wrap"],
+  [class$="__item-bottom"]{
+   display: none;
+    @media (min-width: $md-screen) {
+      display: block;
     }
   }
-  &__link--goto{
-    background-color: $solid-yellow;
-    color: #fff;
-    border-radius: 50%;
-    display: inline-block;
-    position: absolute;
-    padding: 17px 19px;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: .5;
-    top: -60%;
-    right: 10%;
-    box-shadow: 0 0 5px 0 #222;
-    transition: .3s;
-    cursor: pointer;
+
+  &__text-wrap{
+    line-height: 25px;
+  }
+
+  [class*="__item-title"] {
+    text-align: center;
+    display: block;
+    color: $yellow;
     text-decoration: none;
-    &:hover {
-      background-color: lighten($solid-yellow, 7);
-      top: calc(-60% - 7px);
+    text-transform: uppercase;
+    font-family: $Medium;
+    @media (min-width: $md-screen) {
+        margin-bottom: 20px;
+    }
+
+  }
+  &__link-more{
+    display: block;
+    margin-top: 20px;
+    color: $solid-yellow;
+    text-decoration: none;
+    &:hover{
+      color: $grey;
     }
   }
+  //&__inner {
+  //  display: flex;
+  //  flex-wrap: wrap;
+  //  flex-direction: column;
+  //  align-items: center;
+  //}
+  //&__item {
+  //  &-content {
+  //    padding: 25px 15px;
+  //    @extend .card-content;
+  //  }
+  //  &-bottom{
+  //    @extend .card-bottom;
+  //   padding-bottom: 15px;
+  //  }
+  //  &-title{
+  //    @extend .card-title;
+  //  }
+  //}
+  //&__link--goto{
+  //  background-color: $solid-yellow;
+  //  color: #fff;
+  //  border-radius: 50%;
+  //  display: inline-block;
+  //  position: absolute;
+  //  padding: 17px 19px;
+  //  font-weight: bold;
+  //  font-size: 30px;
+  //  line-height: .5;
+  //  top: -60%;
+  //  right: 10%;
+  //  box-shadow: 0 0 5px 0 #222;
+  //  transition: .3s;
+  //  cursor: pointer;
+  //  text-decoration: none;
+  //  &:hover {
+  //    background-color: lighten($solid-yellow, 7);
+  //    top: calc(-60% - 7px);
+  //  }
+  //}
 }

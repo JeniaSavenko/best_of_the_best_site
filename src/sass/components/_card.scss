@@ -20,3 +20,41 @@
   text-decoration: none;
   font-size: 1.3em;
 }
+.news-card {
+  display: flex;
+  overflow: hidden;
+  transition: $med-transition;
+  position: relative;
+  flex-direction: column;
+  max-height: 200px;
+  margin: 10px;
+  box-shadow: 0 0 2px 0 $grey;
+  @media (min-width: $md-screen) {
+    margin: auto;
+    max-height: 400px;
+    margin-bottom: 50px;
+    &:hover {
+      .news-card-content {
+        height: 80%;
+      }
+    }
+  }
+}
+.news-card-top {
+  img {
+    object-fit: cover;
+    object-position: top;
+  }
+}
+.news-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: $white;
+  padding: 15px;
+  @media (min-width: $md-screen) {
+    transition: $med-transition;
+    height: 30%;
+  }
+}

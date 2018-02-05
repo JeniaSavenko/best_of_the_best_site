@@ -22,3 +22,11 @@ body{
   width: calc(100% - 300px)!important;
   transition: ease-in-out .3s!important;
 }
+
+li,
+button,
+[type="submit"] {
+  &:hover {
+    background-color: lighten($grey, 15);
+  }
+}

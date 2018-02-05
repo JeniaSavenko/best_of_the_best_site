@@ -10,14 +10,29 @@
   flex-direction: column;
   justify-content: space-between;
   transition: ease-in-out .3s;
+
   @media (min-width: $md-screen) {
     left: 0;
   }
+
   &__menu {
     &-item {
       border-bottom: 1px solid $border-grey;
-
+      transition: $med-transition;
+      &:hover {
+        background-color: transparentize($grey, .8);
+      }
+      &.active {
+        background-color: $yellow;
+        &:hover {
+          background-color: darken($yellow, 5);
+        }
+       a {
+         color: $white;
+       }
+      }
     }
+
     &-link {
       font-size: 1.5em;
       letter-spacing: 3px;
@@ -40,6 +55,4 @@
     }
   ;
   }
-
-
 }
