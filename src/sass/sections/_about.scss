@@ -6,10 +6,12 @@
   height: calc(100vh - 81px);
   background-position: 50% 70%;
   transition: ease-in-out .3s;
+
   @media (min-width: $md-screen) {
     margin-left: auto;
     width: calc(100% - 300px);
   }
+
   &__inner {
     background-color: transparentize($white, .1);
     display: flex;
@@ -27,6 +29,7 @@
 
     }
   }
+
   &__title {
     color: $solid-yellow;
     text-align: center;

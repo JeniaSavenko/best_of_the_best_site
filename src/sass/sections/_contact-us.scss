@@ -5,10 +5,12 @@
   margin-top: 81px;
   height: calc(100vh - 81px);
   justify-content: center;
+
   @media (min-width: $md-screen) {
     margin-left: auto;
     width: calc(100% - 300px);
   }
+
   &__inner {
     display: flex;
     flex-direction: column;
@@ -52,19 +54,29 @@
       display: flex;
       flex-direction: column;
     }
+    [class$="-bottom"] {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 
   &__item-top {
     margin-bottom: 35px;
   }
-  [class*="input"]{
+
+  [class*="input"] {
     padding-bottom: 20px;
     margin-bottom: 20px;
-    &::placeholder{
-     padding-top: 50px;
+    &::placeholder {
+      font-family: $Regular;
     }
   }
-  &__input--msg{
-    height: 100px;
+
+  &__button {
+    background-color: $grey;
+    border: none;
+    color: white;
+    width: 130px;
+    height: 40px;
   }
 }
