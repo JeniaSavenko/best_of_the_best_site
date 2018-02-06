@@ -8,8 +8,8 @@ body{
 
 
 }
-section {
-  overflow-x: hidden;
+.about, .news, .catalog, .contact_us main {
+  overflow-x: hidden!important;
 }
 
 .sidebar-show {
@@ -23,7 +23,6 @@ section {
   transition: ease-in-out .3s!important;
 }
 
-.sidebar-section__menu-link,
 button,
 [type="submit"] {
   &:hover {
