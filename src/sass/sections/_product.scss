@@ -7,4 +7,30 @@
     margin-left: auto;
     width: calc(100% - 300px);
   }
+  &__item{
+    display: flex;
+    border-bottom: 2px dotted $border-grey;
+    margin-bottom: 10px;
+    &-label{
+      width: 100%;
+      text-align: left;
+      &:after{
+        content: ":";
+      }
+    }
+    &-def{
+      width: 100%;
+      text-align: right;
+
+    }
+  }
+  &__content{
+    p{
+      &:first-child{
+        margin-top: 10px;
+      }
+      margin-bottom: 10px;
+    }
+  }
+
 }
