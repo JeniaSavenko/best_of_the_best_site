@@ -32,7 +32,6 @@ section {
   transition: ease-in-out .3s!important;
 }
 
-button,
 [type="submit"] {
   &:hover {
     background-color: lighten($grey, 15);
