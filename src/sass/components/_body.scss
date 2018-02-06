@@ -8,6 +8,14 @@ body{
 
 
 }
+.about, .contact_us {
+  background-image: url("../img/about-bg.jpg");
+  background-attachment: fixed;
+
+section{
+    background-color: rgba(256, 256, 256, .7);
+}
+}
 section {
   overflow-x: hidden;
 }
