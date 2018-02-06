@@ -8,7 +8,7 @@
     width: calc(100% - 300px);
   }
   [class*="__item--"] {
-    @extend .card;
+    //@extend .card;
 
   }
   [class$="__item-top"] {
@@ -67,5 +67,9 @@
       background-color: lighten($solid-yellow, 7);
       top: calc(-100% - 7px);
     }
+  }
+
+  &__item-wrap{
+    border: 1px solid $border-grey;
   }
 }
