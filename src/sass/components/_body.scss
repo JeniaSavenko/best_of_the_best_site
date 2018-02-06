@@ -8,12 +8,13 @@ body{
 
 
 }
-.about, .contact_us {
+.about, .contact_us, .news {
   background-image: url("../img/about-bg.jpg");
   background-attachment: fixed;
+  background-position: 40% 70%;
 
 section{
-    background-color: rgba(256, 256, 256, .7);
+    background-color: rgba(256, 256, 256, .9);
 }
 }
 section {
