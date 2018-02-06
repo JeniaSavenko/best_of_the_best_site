@@ -48,7 +48,7 @@
     }
   }
 
-  [class*="__item"] {
+  .article-section__item ,[class*="__item"] {
     letter-spacing: 4px;
     font-size: 18px;
     line-height: 1.3;
@@ -65,5 +65,8 @@
   &__item-top {
     margin-bottom: 35px;
   }
+}
+.article-section__item{
+  margin: 15px;
 }
 
